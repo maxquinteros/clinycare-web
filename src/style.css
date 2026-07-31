@@ -1,1 +1,41 @@
 @import "tailwindcss";
+
+@theme {
+  --color-brand-dark: #00499c;
+  --color-brand: #0060de;
+
+  --font-sans: "Montserrat", sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    margin: 0;
+    min-width: 320px;
+    background-color: white;
+    color: #172033;
+    font-family: var(--font-sans);
+    font-weight: 400;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  strong {
+    font-weight: 500;
+  }
+
+  button,
+  a {
+    font-family: inherit;
+  }
+
+  img {
+    display: block;
+    max-width: 100%;
+  }
+}
